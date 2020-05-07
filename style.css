@@ -372,12 +372,13 @@ h2 {
 
     .top {
         background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(img/backS.jpg);
-       
     }
 
     .budget {
         max-width: 90vw;
     }
+
+    .add__description { max-width: 40vw;}
 
     .container {
         min-height: 20vh;
@@ -415,7 +416,7 @@ h2 {
     }
     
     .add__description { 
-        max-width: 40vw;
+        max-width: 30vw;
     }
 
     .add__value {
