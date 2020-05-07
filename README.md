@@ -11,13 +11,13 @@ SCREENSHOTS
 <img src="screenshots/desktop.png">
 
 2. Tablet - landscape mode
-<img src="screenshots/tablet-landscape.png">
+<img src="screenshots/tablet-landscape.png" width="50%">
 
 3. Tablet - portrait mode
-<img src="screenshots/tablet-portrait.png">
+<img src="screenshots/tablet-portrait.png" width="50%">
 
 4. Mobile phone - landscape mode
-<img src="screenshots/phone-landscape.png">
+<img src="screenshots/phone-landscape.png" width="50%">
 
 5. Mobile phone - portrait mode
-<img src="screenshots/phone-portrait.png">
+<img src="screenshots/phone-portrait.png" width="50%">
