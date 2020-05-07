@@ -20,4 +20,4 @@ SCREENSHOTS
 <img src="screenshots/phone-landscape.png" width="50%">
 
 5. Mobile phone - portrait mode
-<img src="screenshots/phone-portrait.png" height="50%">
+<img src="screenshots/phone-portrait.png" width="30%">
