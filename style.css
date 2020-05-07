@@ -323,7 +323,7 @@ h2 {
     }
 
     .budget {
-        max-width: 60vw;
+        max-width: 70vw;
     }
 
     .budgetwrapper {
@@ -358,7 +358,7 @@ h2 {
 @media(max-width:992px) {
 
     .budget {
-        max-width: 80vw;
+        max-width: 90vw;
     }
 
     .container {
