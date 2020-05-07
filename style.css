@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #A0BE4E;
+    --darkblue: #489FB5;
+    --yellow: #EDF2CA;
+    --red: #E9A075;
+}
+  
+body {
+    color: #555;
+    font-family: Open Sans;
+    font-size: 10px;
+    height: 100vh;
+    font-weight: 400;
+}
+
+h2 {
+   text-align: center; 
+}
+
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+    color: #555;
+    padding-left: .5em;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: var(--yellow);
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.right { 
+    float: right; 
+}
+
+.red { 
+    color: var(--red) !important; 
+}
+
+.red-focus:focus { 
+    border: 1px solid var(--red) !important; 
+}
+
+.top {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(img/backL.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    align-content: space-around;
+}
+
+.budget {
+    max-width: 350px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.budget__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-weight: 300;
+}
+
+.budget__value {
+    font-weight: 300;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    letter-spacing: 0.2rem;
+}
+
+.budget__income,
+.budget__expenses {
+    padding: .8rem;
+    text-transform: uppercase;
+}
+
+.budget__income {
+    margin: .5rem;
+    background-color: var(--darkblue);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.budget__expenses {
+    margin: .5rem;
+    background-color: var(--red);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.budget__income--text,
+.budget__income--value,
+.budget__expenses--text,
+.budget__expenses--value {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.budget__income--percentage,
+.budget__expenses--percentage {
+    width: 3rem;
+    font-size: 1rem;
+    padding: .5rem 0;
+    margin-left: 1rem;
+}
+
+.budget__expenses--percentage {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    border-radius: 3px;
+}
+
+.add {
+    padding: .5rem;
+    background-color: var(--yellow);
+    display: flex;
+}
+
+.add__container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.add__type {
+    width: 4rem;
+    border: 1px solid #e7e7e7;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: inherit;
+    background-color: #fff;
+    margin-right: 1rem;
+    font-weight: 300;
+    transition: border 0.3s;
+}
+
+.add__description,
+.add__value {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    transition: border 0.3s;
+}
+
+.add__description { 
+    max-width: 40vw;
+}
+
+.add__value { 
+    max-width: 10vw;
+}
+
+.add__btn {
+    font-size: 3.5rem;
+    background: none;
+    border: none;
+    color: var(--darkblue);
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    align-self: center;
+}
+
+.add__btn:active { 
+    transform: translateY(0.2rem); 
+}
+
+.add__type:focus,
+.add__description:focus,
+.add__value:focus {
+    outline: none;
+    border: 1px solid var(--darkblue);
+}
+
+.container {
+    width: 100%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    min-height: 36.5vh;
+}
+
+.income {
+    margin: 1rem;
+    min-width: 33vw;
+    max-width: 45vw;
+}
+
+.expenses {
+    margin: 1rem;
+    min-width: 33vw;
+    max-width: 45vw;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.icome__title { 
+    color: var(--darkblue); 
+}
+
+.expenses__title { 
+    color: var(--red); 
+}
+
+.item {
+    padding: 1rem;
+    border-bottom: 1px solid #e7e7e7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item:first-child { border-top: 1px solid #e7e7e7; }
+.item:nth-child(even) { background-color: #f7f7f7; }
+
+.item__description {
+    float: left;
+    font-size: 1rem;
+}
+
+.item__value {
+    float: left;
+    transition: transform 0.3s;
+    font-size: 1rem;
+}
+
+.item__percentage {
+    float: left;
+    margin-left: 2rem;
+    transition: transform 0.3s;
+    font-size: 1rem;
+    background-color: #FFDAD9;
+    border-radius: .5rem;
+    width: 3rem;
+    text-align: center;
+}
+
+.income .item__value,
+.income .item__delete--btn {
+    color: var(--darkblue);
+}
+
+.expenses .item__value,
+.expenses .item__percentage,
+.expenses .item__delete--btn {
+    color: var(--red);
+}
+
+.item__delete {
+    float: left;
+}
+
+.item__delete--btn {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    display: none;
+}
+
+.item__delete--btn:focus { outline: none; }
+.item__delete--btn:active { transform: translateY(0.2rem); }
+
+.item:hover .item__delete--btn { display: block; }
+.item:hover .item__value { transform: translateX(-.5rem); }
+.item:hover .item__percentage { transform: translateX(-.5rem); }
+
+.unpaid {
+    background-color: #FFDAD9 !important;
+    cursor: pointer;
+    color: var(--red);
+}
+
+.unpaid .item__percentage { 
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); 
+}
+
+/* TABLET LANSCAPE */
+@media(max-width:1200px) { 
+
+    .top {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(img/backM.jpg);
+    }
+
+    .budget {
+        max-width: 60vw;
+    }
+
+    .budgetwrapper {
+        display: flex;
+        justify-items: space-between;
+    }
+
+    .add__type {
+        max-width: 4rem;
+    }
+    
+    .add__description,
+    .add__value {
+        width: auto;
+    }
+    
+    .add__description { max-width: 50vw;}
+    .add__value { max-width: 20vw;}
+
+    .container {
+        min-height: 46.5vh;
+    }
+
+    .item__delete--btn { 
+        display: block;
+        margin-left: 1rem;
+    }
+
+}
+
+/* TABLET PORTRAIT */
+@media(max-width:992px) {
+
+    .budget {
+        max-width: 80vw;
+    }
+
+    .container {
+        min-height: 59.5vh;
+    }
+
+ }
+
+/* PHONE LANSCAPE */
+@media(max-width:760px) {
+
+    .top {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(img/backS.jpg);
+       
+    }
+
+    .budget {
+        max-width: 90vw;
+    }
+
+    .container {
+        min-height: 20vh;
+    }
+
+}
+
+/* PHONE PORTRAIT */
+@media(max-width:576px) {
+
+    .top {
+        padding: .5rem;
+    }
+    
+    .budget {
+        max-width: 90vw;
+    }
+
+    .budgetwrapper {
+        flex-direction: column;
+    }
+
+    .add__type {
+        max-width: 10vw;
+        font-size: 1rem;
+        max-height: 2rem;
+    }
+    
+    .add__description,
+    .add__value {
+        width: auto;
+        font-size: 1rem;
+        padding: .5rem;
+        margin-right: .3rem;
+    }
+    
+    .add__description { 
+        max-width: 40vw;
+    }
+
+    .add__value {
+        max-width: 25vw;
+    }
+
+    .add__btn {
+        font-size: 2rem;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        min-height: 29.5vh;
+    }
+
+    .income, 
+    .expenses {
+        min-width: 90vw;
+    }
+
+    .item {
+        padding: .2rem;
+    }
+
+    .item__description, 
+    .item__value, 
+    .item__percentage {
+        font-size: .8rem;
+    }
+    
+    .item__delete--btn {
+        font-size: 1rem;
+    }
+
+}
