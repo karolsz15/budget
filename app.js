@@ -1,4 +1,4 @@
-const budgetController = () => {
+const budgetController = ( () => {
     
     class Expense {
 
