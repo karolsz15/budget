@@ -1,3 +1,5 @@
+LIVE: https://karolsz15.github.io/budget/
+
 Budget application written with javascript including following functionalities:
 
 1. Adding incomes and expences with descriptions and values
